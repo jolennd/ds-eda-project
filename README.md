@@ -34,7 +34,6 @@ Size and quality features (`sqft_living`, `grade`, `sqft_above`, `sqft_living15`
 | [`02_workflow.md`](02_workflow.md) | The recommended EDA workflow this project follows. |
 | [`03_fetching_the_data_eda.ipynb`](03_fetching_the_data_eda.ipynb) | Connects to the PostgreSQL `eda` schema and joins `king_county_house_sales` to `king_county_house_details`, exporting the result to `data/eda.csv`. |
 | [`04_eda.ipynb`](04_eda.ipynb) | Main analysis notebook: data understanding, cleaning, correlation analysis, and the three research questions/hypotheses above, with supporting plots. |
-| [`05_eda_william_rodriguez_starter.ipynb`](05_eda_william_rodriguez_starter.ipynb) | A deeper, reference-style pass over the same dataset (pairplots, zero-filtered correlation, Q→Q and C→Q relationship plots) — supporting analysis behind `04_eda.ipynb`'s conclusions. |
 | [`column_names.md`](column_names.md) | Data dictionary for the King County housing columns. |
 | `presentation.pptx` / `presentation.pdf` | The 10-minute client-facing slide deck summarizing methodology and recommendations (PDF is the version pushed to GitHub per the assignment brief). |
 | [`data/`](data/) | Where the joined dataset (`eda.csv`) lives locally. Tracked as a folder, but its contents are git-ignored — nothing here gets pushed. |
@@ -50,7 +49,7 @@ uv sync
 cp .env.example .env   # fill in your King County DB credentials
 ```
 
-Open the project root in VS Code (`code .`), select the `.venv` created by `uv sync` as your kernel, and run the notebooks in order: `03_fetching_the_data_eda.ipynb` first (to produce `data/eda.csv`), then `04_eda.ipynb`, then `05_eda_william_rodriguez_starter.ipynb`.
+Open the project root in VS Code (`code .`), select the `.venv` created by `uv sync` as your kernel, and run the notebooks in order: `03_fetching_the_data_eda.ipynb` first (to produce `data/eda.csv`), then `04_eda.ipynb`.
 
 ## Data source & assumptions
 
